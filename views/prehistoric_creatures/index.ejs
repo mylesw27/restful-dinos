@@ -1,0 +1,11 @@
+<%- include('../partials/header.ejs') %>
+
+<ul>
+    <% prehistorics.forEach((prehistoric, i) => { %>
+        <li>
+            <%= prehistoric.type %> <img class = 'indexImg' src= "<%= prehistoric.img_url %>">
+        </li>
+    <% }) %>
+</ul>
+
+<%- include('../partials/footer.ejs') %>
